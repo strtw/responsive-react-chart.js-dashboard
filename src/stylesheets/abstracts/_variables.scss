@@ -1,0 +1,60 @@
+//_variables.scss
+
+$site-colors: (
+  "text-dark":#616264,
+  "text-mediumDark":#999999,
+  "text-light":#9D9D9D,
+  "text-white":#ffffff,
+  "background":#ffffff,
+//  "background-dark":#F3F3F5,
+  "background-light":#FDFDFD,
+  "accent":#2285C8, //lightblue
+  "accent2":#2BAB90,
+  "background-secondary":rgba(144,217,202,.6), //teal
+  "grayout":#E7E7E7
+);
+
+$border-light:#d9d9d9;
+$backdrop-color:#E7E7E7;
+$backdrop-color-transparent:rgba($backdrop-color,.8);
+
+$site-fonts: (
+  "primary":Raleway,
+  "secondary":'Open Sans',
+  "accent": 'Rock Salt'
+);
+
+//Transition Variables
+
+$transitionFast: .2s;
+$transitionMed: .4s;
+$transitionSlow: .8s;
+
+//Div Shape Variables
+
+$borderRoundedSoft:3px;
+$borderRoundedHard:20px;
+$borderThin:1px solid;
+$borderDefault:2px solid;
+$borderThick:3px solid;
+
+//Box Model Variables -- find related in _mixins
+
+$baseMargin:20px;
+$basePadding:10px;
+
+
+// Font Variables - find related in _mixins
+$headerFont: 'Roboto', serif;
+$fontMono:"Roboto Mono", monospace;
+$fontContent: 'Open Sans', sans-serif;
+
+
+$weightExLight:300;
+$weightLight:400;
+$weightRegular:500;
+$weightBold:700;
+$fontSmall:.8em;
+$fontMed:calc(0.6em + .8vw);
+$fontLarge:calc(0.6em + 1vw);//2em;
+$fontExLarge:calc(0.6em + 2vw);

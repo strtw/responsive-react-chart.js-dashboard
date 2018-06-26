@@ -1,0 +1,13 @@
+@import "../abstracts/_all.scss";
+
+.text-dark{
+  color:site-colors("text-dark");
+}
+
+.text-light{
+  color:site-colors("text-light");
+}
+
+.background-secondary{
+  background-color:site-colors("background-secondary");
+}

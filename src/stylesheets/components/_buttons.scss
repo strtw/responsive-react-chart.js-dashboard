@@ -1,0 +1,16 @@
+.button--primary{
+  @extend %button;
+  @include lovehate{$self:true}
+  background-color: site-colors("accent");
+  border:$borderDefault site-colors("accent");
+  color:site-colors("text-white");
+  &:hover{
+    background-color: site-colors("accent");
+    color:site-colors("text-white");
+  }
+  &:active{
+    background-color: site-colors("accent");
+    color:site-colors("text-white");
+  }
+}
+

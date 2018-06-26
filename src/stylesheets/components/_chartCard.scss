@@ -1,0 +1,84 @@
+.chartCard{
+  background-color:site-colors("background");
+  //width:95%;
+  //height:400px;
+  margin:3%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.chartCard__rightBlock{
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  margin-top:30px;
+  position:absolute;
+  right:40px;
+  font-size:$fontSmall;
+  @media screen and (max-width:770px){
+    position: relative;
+    order: -1;
+    margin: 15px auto 0;
+    right: 0;
+    font-size: 2.6vw;
+    display: block;
+  }
+}
+
+.chartCart__titleInfoRight,
+.chartCart__titleInfoRightSubText{
+  align-self: flex-end;
+  color:site-colors("text-light");
+  font-size:$fontMed;
+  @media screen and (max-width:1000px){
+    font-size: $fontSmall;
+  } @media screen and (max-width:400px){
+  font-size: $fontMed;
+}
+
+}
+
+.chartCard__titleInfoRightEmph{
+  font-weight:$weightBold;
+  color:site-colors("text-mediumDark");
+}
+
+.chartCart__titleInfoRight,.chartCart__titleInfoRightSubText{
+  margin-right:15px;
+}
+
+.chartCard__footer{
+  padding: 10px;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  font-size:$fontMed;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: left;
+  @media screen and (max-width:1066px){
+    margin-top:20px;
+  }
+}
+
+chartCard__footerText{
+  margin-right:15px;
+}
+
+.chartCard__footerText,.chartCard__footerTimeStamp{
+  margin-right:15px;
+  color:site-colors("text-mediumDark");
+  font-size: $fontSmall;
+}
+
+.chartCard__footerBold{
+  font-weight:$weightBold;
+  color:site-colors("text-mediumDark");
+}
+.chartCard__footerTimeStamp{
+  @media screen and (max-width:1170px){
+   // margin:0px;
+  }
+}

@@ -1,0 +1,78 @@
+.chart{
+  position: relative;
+  height: 30vh;
+  width: 50vw;
+  margin: 20px 5vw 20px 20px;
+ /* @media screen and (max-width: 1180px){
+    height:300px;
+    width:750px;
+  }
+  @media screen and (max-width: 1120px){
+    height:280px;
+    width:700px;
+  }
+
+  @media screen and (max-width: 1050px){
+    height:280px;
+    width:600px;
+  }
+
+
+  @media screen and (max-width: 915px){
+    height:340px;
+    width:730px;
+  }
+  @media screen and (max-width: 800px){
+    height:350px;
+    width:700px;
+  }
+  @media screen and (max-width: 741px){
+    height:300px;
+    width:600px;
+  }
+  @media screen and (max-width: 620px){
+    height:250px;
+    width:500px;
+  }
+  @media screen and (max-width: 560px){
+    height:200px;
+    width:400px;
+  }
+  @media screen and (max-width: 412px){
+    height:175px;
+    width:350px;
+  }
+  @media screen and (max-width: 375px){
+    height:150px;
+    width:300px;
+  }*/
+
+  @media screen and (max-width: 850px) {
+    height:28vw;
+    width: 80vw;
+    margin: 20px auto;
+  }
+  @media screen and (max-width: 440px) {
+
+    width: 85vw;
+  }
+  @media screen and (max-width: 400px) {
+
+    width: 93vw;
+  }
+
+}
+
+.chart__header{
+  margin:5px 0 0px 5px;
+  color:site-colors("text-mediumDark");
+  font-size:$fontLarge;
+  font-weight:$weightLight;
+}
+
+.chart__headerSubtitle{
+ margin:0 0 15px 6px;
+ color:site-colors("text-light");
+  font-size: $fontSmall;
+}
+
