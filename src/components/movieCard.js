@@ -3,10 +3,8 @@
  */
 
 import React, { Component } from 'react';
-//import '../stylesheets/main.css';
 import Button from './buttons';
 import classNames from 'classnames/bind';
-//import styles from '../stylesheets/components/_movieCard.scss';
 import 'font-awesome/css/font-awesome.min.css';
 
 class MovieCard extends Component {

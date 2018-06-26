@@ -17,8 +17,8 @@ class ChartCard extends Component {
                </div>
 
                <div className="progressChartBar__container">
-                   <ProgressChartBar className="background-secondary"/>
-                   <ProgressChartBar className="background-secondary"/>
+                   <ProgressChartBar className="background-secondary" title="Movie 1" count="2,346"/>
+                   <ProgressChartBar className="background-light" title="Movie 2" count="4,422"/>
                </div>
                <div class="chartCard__footer">
                    <p class="chartCard__footerText"> <span className="chartCard__footerBold">Analysis of Sales:</span> The value has been changed over time and last month reached a value of over $50,000</p>
