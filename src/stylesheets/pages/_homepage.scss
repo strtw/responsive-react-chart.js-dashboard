@@ -16,9 +16,58 @@ body{
 }
 
 .movies{
-  //margin: 10px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap:wrap;
+  padding:0 15px;
+}
+
+.movieCardContainer{
+  width:48%;
+  @media screen and (max-width:575px){
+    width:100%;
+    margin-bottom:15px;
+  }
+}
+
+.progressChartBar__parentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin-top:9vw;
+  width: 35%;
+
+  @media screen and (max-width: 1180px) {
+    margin-top:6vw;
+  }
+  @media screen and (max-width: 850px) {
+    flex-direction:row;
+    height:50px;
+    margin:150px 0 30px 0;
+    width:100%;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 650px) {
+    margin-top:20vw;
+  }
+  @media screen and (max-width: 472px) {
+    margin-top:20vw;
+    margin-bottom:0;
+  }
+  @media screen and (max-width: 440px) {
+    margin-top:23vw;
+  }
+  @media screen and (max-width: 400px) {
+    margin-top:25vw;
+  }
+
+}
+
+.progressChartBar__container{
+  margin-top:20px;
+  @media screen and (max-width: 850px){
+    width:35%;
+  }
 }

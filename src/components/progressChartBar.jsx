@@ -7,8 +7,6 @@ import classNames from 'classnames/bind';
 class progressChartBar extends Component {
     render() {
         var className = classNames('progressChartBar__bar',this.props.className);
-        var movieTitle = this.props.title;
-        var count = this.props.count;
         return(
             <div className="progressChartBar">
                 <span className="progressChartBar__count">{this.props.count}</span>

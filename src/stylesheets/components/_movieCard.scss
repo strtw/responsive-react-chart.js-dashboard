@@ -1,15 +1,8 @@
 .movieCard{
-  background-color:#ffff;
-  width:44%;
-  margin:10px;
+  background-color: #ffffff;
   padding:25px;
   color:site-colors('text-medium');
-  @media screen and (max-width:807px){
-   width:43%;
-  }
-  @media screen and (max-width:575px){
-    width:100%;
-  }
+  width:100%;
 }
 
 .movieCard__subtitle{

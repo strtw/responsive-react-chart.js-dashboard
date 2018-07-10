@@ -1,6 +1,6 @@
 .chartCard{
   background-color:site-colors("background");
-  margin:3%;
+  margin:20px;
   display:flex;
   flex-direction: row;
   flex-wrap:wrap;
@@ -13,14 +13,15 @@
   margin-top:30px;
   position:absolute;
   right:40px;
-  font-size:$fontSmall;
   @media screen and (max-width:770px){
     position: relative;
     order: -1;
-    margin: 15px auto 0;
+    margin: 40px auto 0;
     right: 0;
-    font-size: 2.6vw;
-    display: block;
+  }
+  @media screen and (max-width:406px){
+    display:block;
+    width:80%;
   }
 }
 
@@ -30,10 +31,10 @@
   color:site-colors("text-light");
   font-size:$fontMed;
   @media screen and (max-width:1000px){
-    font-size: $fontSmall;
+    font-size: $fontMed;
   }
   @media screen and (max-width:400px){
-  font-size: $fontMed;
+  font-size: $fontLarge;
   }
 }
 
@@ -54,9 +55,8 @@
   font-size:$fontMed;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 20px;
   text-align: left;
-  @media screen and (max-width:1066px){
+  @media screen and (max-width:850px){
     margin-top:20px;
   }
 }

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 .text-dark {
   color: #616264; }
 
@@ -30,12 +33,6 @@
   margin-left: auto;
   margin-right: auto; }
 
-.pull-left {
-  float: left; }
-
-.pull-right {
-  float: right; }
-
 .button--primary {
   background-color: #2285C8;
   border: 2px solid #2285C8;
@@ -49,9 +46,8 @@
 
 .chart {
   position: relative;
-  height: 30vh;
   width: 50vw;
-  margin: 20px 5vw 20px 20px; }
+  margin: 20px 5vw 1vw 20px; }
   @media screen and (max-width: 850px) {
     .chart {
       height: 28vw;
@@ -67,7 +63,7 @@
 .chart__header {
   margin: 5px 0 0px 5px;
   color: #999999;
-  font-size: calc(0.6em + 1vw);
+  font-size: calc(0.6rem + 1vw);
   font-weight: 400; }
 
 .chart__headerSubtitle {
@@ -75,9 +71,13 @@
   color: #9D9D9D;
   font-size: 0.8em; }
 
+@media screen and (max-width: 379px) {
+  .chart__header, .chart__headerSubtitle {
+    margin-left: 20px; } }
+
 .chartCard {
   background-color: #ffffff;
-  margin: 3%;
+  margin: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
@@ -88,30 +88,31 @@
   flex-wrap: wrap;
   margin-top: 30px;
   position: absolute;
-  right: 40px;
-  font-size: 0.8em; }
+  right: 40px; }
   @media screen and (max-width: 770px) {
     .chartCard__rightBlock {
       position: relative;
       order: -1;
-      margin: 15px auto 0;
-      right: 0;
-      font-size: 2.6vw;
-      display: block; } }
+      margin: 40px auto 0;
+      right: 0; } }
+  @media screen and (max-width: 406px) {
+    .chartCard__rightBlock {
+      display: block;
+      width: 80%; } }
 
 .chartCart__titleInfoRight,
 .chartCart__titleInfoRightSubText {
   align-self: flex-end;
   color: #9D9D9D;
-  font-size: calc(0.6em + .8vw); }
+  font-size: calc(0.6rem + .8vw); }
   @media screen and (max-width: 1000px) {
     .chartCart__titleInfoRight,
     .chartCart__titleInfoRightSubText {
-      font-size: 0.8em; } }
+      font-size: calc(0.6rem + .8vw); } }
   @media screen and (max-width: 400px) {
     .chartCart__titleInfoRight,
     .chartCart__titleInfoRightSubText {
-      font-size: calc(0.6em + .8vw); } }
+      font-size: calc(0.6rem + 1vw); } }
 
 .chartCard__titleInfoRightEmph {
   font-weight: 700;
@@ -126,12 +127,11 @@
   margin: auto;
   width: 90%;
   display: flex;
-  font-size: calc(0.6em + .8vw);
+  font-size: calc(0.6rem + .8vw);
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 20px;
   text-align: left; }
-  @media screen and (max-width: 1066px) {
+  @media screen and (max-width: 850px) {
     .chartCard__footer {
       margin-top: 20px; } }
 
@@ -145,16 +145,9 @@
   color: #999999; }
 
 .movieCard {
-  background-color: #ffff;
-  width: 44%;
-  margin: 10px;
-  padding: 25px; }
-  @media screen and (max-width: 807px) {
-    .movieCard {
-      width: 43%; } }
-  @media screen and (max-width: 575px) {
-    .movieCard {
-      width: 100%; } }
+  background-color: #ffffff;
+  padding: 25px;
+  width: 100%; }
 
 .movieCard__subtitle {
   font-weight: bold; }
@@ -167,11 +160,11 @@
 
 .movieCard__button {
   align-content: flex-end;
-  font-size: calc(0.6em + 1vw); }
+  font-size: calc(0.6rem + 1vw); }
 
 .movieCard__title {
   display: block;
-  font-size: calc(0.6em + 2vw);
+  font-size: calc(0.6rem + 2vw);
   font-weight: 500;
   margin-bottom: 15px;
   width: 100%; }
@@ -180,60 +173,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: calc(0.6em + 1vw); }
+  font-size: calc(0.6rem + 1vw); }
 
-.progressChartBar__container {
+.progressChartBar {
   color: #9D9D9D;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 30.5vw;
-  width: 35%; }
-  @media screen and (max-width: 1087px) {
-    .progressChartBar__container {
-      height: 32vw; } }
-  @media screen and (max-width: 850px) {
-    .progressChartBar__container {
-      flex-direction: row;
-      height: 50px;
-      margin: 150px 0 30px 0;
-      width: 100%;
-      justify-content: space-around; } }
-  @media screen and (max-width: 650px) {
-    .progressChartBar__container {
-      margin-top: 20vw; } }
-  @media screen and (max-width: 472px) {
-    .progressChartBar__container {
-      margin-top: 20vw;
-      margin-bottom: 0; } }
-  @media screen and (max-width: 440px) {
-    .progressChartBar__container {
-      margin-top: 23vw; } }
-  @media screen and (max-width: 400px) {
-    .progressChartBar__container {
-      margin-top: 25vw; } }
-
-.progressChartBar {
-  display: flex;
-  flex-direction: column;
-  margin: 1vw; }
+  width: 100%; }
   @media screen and (max-width: 1000px) {
     .progressChartBar {
-      font-size: calc(0.6em + .8vw);
-      margin: .8vw; } }
-  @media screen and (max-width: 850px) {
-    .progressChartBar {
-      width: 35%; } }
+      font-size: calc(0.6rem + .8vw); } }
 
 .progressChartBar__title {
   margin: 10px 0;
   font-size: 0.8em; }
-  @media screen and (max-width: 1000px) {
-    .progressChartBar__title {
-      margin: .4vw 0; } }
 
 .progressChartBar__count {
-  font-size: calc(0.6em + 2vw);
+  font-size: calc(0.6rem + 2vw);
   font-weight: 300; }
 
 .progressChartBar__bar {
@@ -267,4 +223,49 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 0 15px; }
+
+.movieCardContainer {
+  width: 48%; }
+  @media screen and (max-width: 575px) {
+    .movieCardContainer {
+      width: 100%;
+      margin-bottom: 15px; } }
+
+.progressChartBar__parentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 9vw;
+  width: 35%; }
+  @media screen and (max-width: 1180px) {
+    .progressChartBar__parentContainer {
+      margin-top: 6vw; } }
+  @media screen and (max-width: 850px) {
+    .progressChartBar__parentContainer {
+      flex-direction: row;
+      height: 50px;
+      margin: 150px 0 30px 0;
+      width: 100%;
+      justify-content: space-around; } }
+  @media screen and (max-width: 650px) {
+    .progressChartBar__parentContainer {
+      margin-top: 20vw; } }
+  @media screen and (max-width: 472px) {
+    .progressChartBar__parentContainer {
+      margin-top: 20vw;
+      margin-bottom: 0; } }
+  @media screen and (max-width: 440px) {
+    .progressChartBar__parentContainer {
+      margin-top: 23vw; } }
+  @media screen and (max-width: 400px) {
+    .progressChartBar__parentContainer {
+      margin-top: 25vw; } }
+
+.progressChartBar__container {
+  margin-top: 20px; }
+  @media screen and (max-width: 850px) {
+    .progressChartBar__container {
+      width: 35%; } }
