@@ -1,5 +1,7 @@
 ## Responsive React Dashboard
 
+This dashboard is written in React as an exercise in creating maintainable, modular UI components. 
+
 [Demo](http://dashboardm.surge.sh/)
 
 ###  [Presentation on my development process](https://docs.google.com/presentation/d/e/2PACX-1vTp_DVyPAzO0Y6e9qGpYBlQxZc8hktadwY2_5D9hCH14IOyekXlb9y-gma5fohTv_1X7nBiBM0oJPX1/pub?start=false&loop=false&delayms=3000)
